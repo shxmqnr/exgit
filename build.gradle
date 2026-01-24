@@ -23,6 +23,17 @@ dependencies {
 	
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	
+	implementation files('libs/ojdbc8.jar')
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	//passwordencoder사용하려면 필요
+	
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
